@@ -1,1 +1,189 @@
+<!---------- Meta HTML Starts --------->
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>AI Notice Board</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+<!---------- Meta HTML Ends --------->
 
+<!---------- Top Header Starts --------->
+<div class="top-header">
+   <div class="container">
+       <div class="logo">
+          <a href = https://www.ruet.ac.bd> <img src="images/ruet3.png" alt="Varsity Logo"></a>
+       </div>
+       <div class="quote">
+           <marquee scrollamount="10" width="95%" behavior="scroll" direction="left" class="headquote" >
+               Welcome to Our AI Notice Board
+           </marquee>
+       </div>
+   </div>
+</div>
+<!---------- Top Header Ends --------->
+
+<script>
+   document.querySelectorAll('.main-menu a').forEach((link) => {
+     link.addEventListener('click', () => {
+       // Prevent the default link behavior.
+       event.preventDefault();
+
+       // Redirect the user to the target URL.
+       window.location.href = link.getAttribute('href');
+     });
+   });
+ </script>
+<!---------- Logo And Main Menu HTML Starts --------->
+<div class="width-100 header-menu">
+   <nav>
+   <div class="container">
+      <ul class="main-menu">
+         <li><a href="#home">Home</a></li>
+         <li><a href="#notice">Notice Board</a></li>
+         <li><a href="#viewnotice">View Notice</a></li>
+         <li><a href="#livestreaming">Live Streaming</a></li>
+      </ul>
+   </div>
+   </nav>
+</div>
+
+<!-- Add sections with corresponding IDs -->
+<!-- For Home -->
+<section id="home">
+    <!-- Nothing -->
+</section>
+
+<!-- For Notice Board -->
+<section id="notice">
+<div class="container flex-container"> 
+   <div class="width-30">
+      <div class="latest-news">
+            <div class="heading-sect">
+                <h3 class="head-title">Notice Board</h3>
+            </div>
+            <div class="notice-board-content">
+            <ul class="upcoming-event-list">
+                <li>
+                    <span class="event-date">31 Mar </span> 
+                    <a href="#" class="pdf-link" data-pdf="pdfs/notice1.pdf">Ph D merit list Part 01_16 Feb 2022 </a>
+                    <iframe class="pdf-viewer" src=""></iframe>
+                    <a href="#" class="pdf-download" style="display: none;">Download PDF</a> 
+                </li>
+                <li>
+                    <span class="event-date">1 April</span>
+                    <a href="#" class="pdf-link" data-pdf="pdfs/notice2.pdf">Ph D merit list Part 02_16 Feb 2022 </a>
+                    <iframe class="pdf-viewer" src=""></iframe>
+                    <a href="#" class="pdf-download" style="display: none;">Download PDF</a> 
+                </li>
+                <li>
+                  <span class="event-date">2 April</span>
+                  <a href="#" class="pdf-link" data-pdf="pdfs/notice2.pdf">Ph D merit list Part 02_16 Feb 2022</a>
+                  <iframe class="pdf-viewer" src=""></iframe>
+                  <a href="#" class="pdf-download" style="display: none;">Download PDF</a> 
+                </li>
+                <li>
+                  <span class="event-date">3 April</span>
+                  <a href="#" class="pdf-link" data-pdf="pdfs/notice2.pdf">Ph D merit list Part 02_16 Feb 2022</a>
+                  <iframe class="pdf-viewer" src=""></iframe>
+                  <a href="#" class="pdf-download" style="display: none;">Download PDF</a> 
+                </li>
+                <li>
+                  <span class="event-date">4 April</span>
+                  <a href="#" class="pdf-link" data-pdf="pdfs/notice2.pdf">Ph D merit list Part 02_16 Feb 2022 </a>
+                  <iframe class="pdf-viewer" src=""></iframe>
+                  <a href="#" class="pdf-download" style="display: none;">Download PDF</a> 
+                </li>
+                <li>
+                  <span class="event-date">4 April</span>
+                  <a href="#" class="pdf-link" data-pdf="pdfs/notice2.pdf">Ph D merit list Part 02_16 Feb 2022 </a>
+                  <iframe class="pdf-viewer" src=""></iframe>
+                  <a href="#" class="pdf-download" style="display: none;">Download PDF</a> 
+                </li>
+                <li>
+                  <span class="event-date">4 April</span>
+                  <a href="#" class="pdf-link" data-pdf="pdfs/notice2.pdf">Ph D merit list Part 02_16 Feb 2022 </a>
+                  <iframe class="pdf-viewer" src=""></iframe>
+                  <a href="#" class="pdf-download" style="display: none;">Download PDF</a> 
+                </li>
+                <li>
+                  <span class="event-date">4 April</span>
+                  <a href="#" class="pdf-link" data-pdf="pdfs/notice2.pdf">Ph D merit list Part 02_16 Feb 2022 </a>
+                  <iframe class="pdf-viewer" src=""></iframe>
+                  <a href="#" class="pdf-download" style="display: none;">Download PDF</a> 
+                </li>
+                <!-- Add more notices with dates and PDF links as needed -->
+            </ul>
+         </div>
+      </div>
+   </div>
+   <div class="width-70">
+      <div class="pdf-segment" id="pdf-segment">
+         <div class="heading-sect">
+            <h3 class="head-title">View Notice</h3>
+         </div>
+         <div class="pdf-content">
+            <iframe class="pdf-viewer" src=""></iframe>
+            <a class="download-pdf-link" href="#" target="_blank" style="display: none;">Download Notice</a>
+         </div>
+      </div>
+   </div>  
+</div>
+</section>
+
+<!-- For View Notice -->
+<section id="viewnotice">
+   <!-- Nothing -->
+</section>
+
+<!-- For Live Streaming -->
+<section id="livestreaming">
+   <div class="width-100">
+      <div class="live-streaming">
+         <div class="heading-sect">
+               <h3 class="head-title">Live Video Streaming</h3>
+         </div>
+         <div class="video-container">
+               <video id="live-video" autoplay playsinline></video>
+         </div>
+      </div>
+   </div> 
+</section>
+
+<!-- Linking with Javascript File -->
+<script src="script.js"></script>
+    
+
+<!---------- Footer HTML Starts --------->
+<div class="width-100 margin-top-50 footer">
+   <div class="container">
+      <div class="width-30">
+         <h2 class="quicklink-heading">Contact Information</h2>
+         <ul class="quicklink-menu">
+            <li style="font-family: 'Times New Roman', Times, serif;">Dept. of Electronics & Telecommunication Engineering</li>
+            <li style="font-family: 'Times New Roman', Times, serif;">Rajshahi University of Engineering & Technology</li>
+            <li style="font-family: 'Times New Roman', Times, serif;">Kazla, Rajshahi-6204, Bangladesh.</li>
+            <li style="font-family: 'Times New Roman', Times, serif;">&#9742; +880-1743293555</li> 
+            <li style="font-family: 'Times New Roman', Times, serif;"><a href="https://www.ete.ruet.ac.bd/">Website: ete.ruet.ac.bd</a></li><br>
+            <li style="font-family: 'Times New Roman', Times, serif;">Copyright &#169; RUET</li> 
+         </ul>
+      </div>
+      <div class="width-40">
+         <h2 class="quicklink-heading">About RUET</h2><br>
+         <ul class="quicklink-menu">
+            <p style="font-family: 'Times New Roman', Times, serif; text-align: justify;"> Rajshahi University of Engineering & Technology (RUET) is the second oldest engineering university in Bangladesh. It was founded in 1964 as a faculty of Engineering under the University of Rajshahi providing four years Bachelor degree in Civil, Electrical and Electronic and Mechanical Engineering. In 1986, it was converted to an autonomous institution called Rajshahi University of Engineering and Technology. </p>
+         </ul>
+      </div>
+      <div class="width-20">
+         <h2 class="newquicklink-heading">Important Links</h2>
+         <ul class="quicklink-menu">
+            <li class="RUET"><a href="https://www.ruet.ac.bd">RUET</a></li>
+            <li class="ETE"><a href="https://www.ete.ruet.ac.bd">Dept. of ETE</a></li>
+            <li class="ETE"><a href="https://www.ruet.ac.bd/notice">All Notices</a></li>
+   </div>
+</div>
+<!---------- Footer HTML Ends --------->
+
+</body>
+</html>
