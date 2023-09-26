@@ -1,0 +1,474 @@
+/********** Common CSS Starts **********/ 
+
+* {
+    margin:0px;
+    padding:0px;
+}
+body, html {
+    font-family: Roboto, sans-serif, arial;
+    background:#f0f3fa; 
+}
+.width-100 {
+    width:100%;
+    float:left;
+}
+.width-20 {
+    width:20%;
+    float:left;
+}
+.width-25 {
+    width:25%;
+    float:left;
+}
+.width-30 {
+    width:30%;
+    float:left;
+}
+.width-33 {
+    width:33%;
+    float:left;
+}
+.width-40 {
+    width:40%;
+    float:left;
+}
+.width-50 {
+    width:50%;
+    float:left;
+}
+.width-60 {
+    width:60%;
+    float:left;
+}
+.width-70 {
+    width:70%;
+    float:left;
+}
+.width-80 {
+    width:80%;
+    float:left;
+}
+.width-90 {
+    width:90%;
+    float:left;
+}
+.width-10 {
+    width:10%;
+    float:left;
+}
+.container {
+    width:1500px;
+    margin:0 auto;
+}
+.plr {
+    padding-left:100px;
+    padding-right:100px;
+}
+.margin-top-50 {
+    margin-top:50px;
+}
+
+/********** Common CSS Ends **********/
+
+/********** Top Header Starts **********/
+
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Space evenly between columns */
+    align-items: flex-start; /* Align columns to the top */
+}
+.width-50 {
+    width: 50%;
+}
+.top-header {
+    background: linear-gradient(45deg, #0d5fca, #2a90e3);
+    padding: 10px 0;
+    border-bottom: 1px solid #3131315e;
+    text-align: center;
+    position: relative; /* Make it a relative positioning context */
+}
+.quote {
+    font-family: "Georgia", serif;
+    font-size: 70px;
+    color: #ffffff;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    transition: color 0.3s;
+}
+.quote:hover { /* Add hover effect to change text color */
+    color: #f1e7e3;
+}
+.logo {
+    width: fit-content;
+    float: left;
+}
+/********** Top Header Ends **********/
+
+/********** Logo And Menu Starts **********/  
+
+.header-menu {
+    position: relative;
+    background-color:  #2196f3;  /* Background color for the menu bar */
+    box-shadow: 0px 2px 5px 0px #00000036;
+    opacity: 95%;
+}
+.header-menu:hover {
+    background-color: #3027b1;/* Change the background color on hover to blue */
+    transition: background-color 0.6s;
+    opacity: 95%;
+}
+.main-menu {
+    list-style: none;
+    float: right;
+    margin-top: 20px;
+    padding: 0;
+}
+.main-menu li {
+    display: inline-block; /* Change from float to display inline-block */
+    margin: 0 px;
+    padding: 0 px;
+    position: relative;
+}
+.main-menu a {
+    font-weight: 500;
+    color: #fff; /* Text color for menu items */
+    font-size: 20px;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+.main-menu a:hover {
+    background-color: #53d01e; /* Hover background color */
+    color: #fff; /* Hover text color */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+.main-menu li:hover ul { /* Add a pop-up effect for menu items on hover */
+    display: block;
+}
+.main-menu ul { /* Submenu styles (you can add submenu items as needed) */
+    list-style: none;
+    padding: 20%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    background-color: #d5e1ea; /* Background color for submenu */
+    display: none; /* Hide submenu by default */
+}
+.main-menu ul li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.main-menu ul li a {
+    color: #2196f3; /* Text color for submenu items (blue) */
+    text-decoration: none;
+    padding: 8px 15px;
+    display: block;
+}
+.main-menu ul li:hover a {
+    background-color: #ff5722; /* Hover background color for submenu items */
+    color: #fff; /* Hover text color for submenu items */
+    border-radius: 5px; /* Rounded corners on hover for submenu items */
+}
+
+/********** Logo And Menu Ends **********/
+
+/**********  Notice Board Starts **********/
+
+.notice-board-content {
+    max-height: 250px; /* Adjust the maximum height as needed */
+    overflow-y: scroll; /* Enable vertical scroll */
+    padding-right: 10px; /* Add some padding to the right to accommodate the scrollbar */
+}
+.notice-board-content {
+    max-height: 400px; /* Adjust the maximum height as needed */
+    overflow-x: scroll; /* Enable vertical scroll */
+    padding-right: 10px; /* Add some padding to the right to accommodate the scrollbar */
+}
+
+.notice-date {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.latest-news{
+    margin-left:10px;
+    margin-right:20px;
+    background:#fff;
+    padding:20px;
+    height:480px;
+    margin-bottom:30px;
+    position: relative;
+    transition: box-shadow 0.6s ease;
+}
+.heading-sect{
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #f6f5f5;
+    padding-bottom: 100px;
+    margin: 0px;
+    margin-bottom: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-top: 15px;
+    padding-left: 15px;
+    background: #3027b1;
+    color:white;
+    opacity: 85%;
+}
+.heading-sect h3{
+    color:white;
+}
+.head-title {
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Papyrus', fantasy!important;
+    color: #2196f3;
+    padding-bottom: 5px;
+}
+.upcoming-event-list li {
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+    position: relative;
+    transition: box-shadow 0.6s ease;
+}
+.upcoming-event-list{
+    padding:0px;
+    list-style: none;
+   
+}
+.event-date {
+    background: #03a9f4;
+    width: 30px;
+    float: left;
+    text-align: center;
+    font-size:14px;
+    color: #fff;
+    padding:4px;
+    margin-right: 10px;
+}
+.upcoming-event-list li:hover { /* Hover effect for Notice items in the notice board */
+    background-color: #9ee0e1;
+    background-color: #badcdc5e; /* Change the background color on hover */
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+.latest-news:hover { /* Hover effect for the Notice Board bar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+/**********, Notice Board Ends **********/
+
+/* Video Streaming Begins */
+
+.live-streaming-section {
+    margin-left: 10px;
+    width: 100%;
+}
+.live-streaming { /* Style for the Live Video Streaming header */
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #fff;
+    padding: 20px;
+    height: 350px;
+    margin-bottom: 100px;
+    position: relative;
+    transition: box-shadow 0.6s ease;
+
+}
+.live-streaming .heading-sect{ /* Style for the Live Video Streaming header */
+    width: 100%;
+    float: right;
+    border-bottom: 1px solid #cfcfcf;
+    margin: 0px;
+    margin-bottom: 8px;
+    padding-top: 2px;
+    border: 1px solid #cfcfcf;
+    padding-bottom: 0px;
+    padding-top: 15px;
+    padding-left: 15px;
+    background: #3027b1;
+    color: white;
+    opacity: 85%;
+}
+.live-streaming .heading-sect h3 {
+    color: white;
+}
+.live-streaming .video-container { /* Style for the video container */
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    border: 1px solid rgb(247, 239, 239);
+    justify-content: center;
+    padding-left: 0px; /* Add a border if needed */
+}
+.live-streaming #live-video { /* Style for the video element */
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc; 
+    justify-content: center;
+    transform: scaleX(-1);
+}
+.live-streaming:hover { /* Hover effect for Live Streaming section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.video-container {
+    margin: 0 auto;
+  }
+/* Video Streaming Ends */
+
+
+/* View Notice segment Starts */
+.pdf-segment {
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #fff;
+    padding: 20px;
+    height: 480px;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+.pdf-segment:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-content {
+    max-height: 450px; /* Adjust the maximum height as needed */
+    overflow-y: scroll; /* Enable vertical scroll */
+    padding-right: 10px; /* Add some padding to the right to accommodate the scrollbar */
+}
+/* Style for the PDF segment header begins */
+.pdf-segment .heading-sect {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 0px;
+    margin: 0px;
+    margin-bottom: 15px;
+    padding-top: 2px;
+    border: 1px solid #cfcfcf;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+    background: #3027b1;
+    color: white;
+}
+
+.pdf-segment .heading-sect h3 {
+    color: white;
+}
+
+/* Style for the PDF content container */
+.pdf-segment .pdf-content {
+    background-color: white;
+}
+
+.pdf-content :hover{
+    background-color: #ffffff; /* Change the background color on hover */
+}
+
+.pdf-link {
+    color: #2196f3;
+    text-decoration: none;
+    font-family: 'Garamond', serif!important;
+    font-size: large;
+    font-style: calc();
+    font-weight: 550;
+}
+.pdf-link:hover {
+    color: #ff5722;
+}
+.pdf-viewer {
+    width: 100%; /* Adjust the width as needed */
+    height: 350px; /* Adjust the height as needed */
+    border: none;
+    display: none; /* Initially hide the iframes */
+    position: relative;
+    transition: box-shadow 0.6s ease;
+}
+/* View Notice Segment ends */
+
+/********** Footer Starts **********/  
+.footer {
+    background: #232F3E;
+    padding: 50px 0px;
+}
+.quicklink-menu {
+    list-style:none;
+    padding-left: 10px;
+    color: white
+    
+}
+.quicklink-menu li a {
+    color: rgb(241, 234, 234);
+    line-height: 1.5;
+    font-size: 15px;
+    text-decoration:none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.quicklink-heading {
+    font-size:18px;
+    font-weight:bold;
+    color:#fff;
+    margin-bottom:10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.RUET{
+    font-size: 0px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.ETE{
+    font-size: 0px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.newquicklink-heading{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer {
+    background: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+  }
+  
+  .footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/ruet_gate.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    transform: translate3d(0, 0, 0);
+    z-index: -1;
+  }
+  
+
+/********** Footer Ends **********/
